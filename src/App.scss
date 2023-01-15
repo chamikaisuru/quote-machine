@@ -1,0 +1,142 @@
+$border-radius: 10px;
+
+@media only screen and (max-width: 600px) {
+  
+  #quote-box{
+    
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    .buttons {
+      flex-direction: column-reverse;
+    }
+  }
+  
+}
+
+.App {
+  #quote-box {
+
+    color: black;
+    border-radius: 3px;
+    position: relative;
+    width: 450px;
+    padding: 40px 50px;
+    display: table;
+    background-color: #fff;
+
+    #quote-text {
+      text-align: center;
+      width: 450px;
+      height: auto;
+      clear: both;
+      font-weight: 500;
+      font-size: 1.75em;
+      font-size: 1em;
+      margin-right: 0.4em;
+
+
+    }
+
+    #fa {
+      display: inline-block;
+      font: normal normal normal 14px/1
+    }
+
+    #text {
+      font-size: 30px;
+      font-style: normal;
+      font-family: "Raleway", sans-serif;
+      opacity: 1;
+    }
+
+    #author {
+      text-align: end;
+      width: 450px;
+      height: auto;
+      clear: both;
+      padding-top: 20px;
+      font-size: 20px;
+      font-family: 'Segoe UI';
+      text-align: right;
+    }
+
+    #buttons {
+      width: 450px;
+      margin: auto;
+      display: block;
+    }
+
+    .button {
+      height: 38px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #333;
+      outline: none;
+      font-size: 0.85em;
+      padding: 8px 18px 6px 18px;
+      margin-top: 30px;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    #tweet-quote {
+      display: flex;
+      float: left;
+      padding-left: 5%;
+    }
+
+    #tumblr-quote {
+      float: center;
+      padding-left: 5%;
+    }
+
+    #new-quote {
+      float: right;
+      // height: 30px;
+      // width: 40px;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .button#tweet-quote,
+    .button#tumblr-quote {
+      display: flex;
+      float: left;
+      justify-content: center;
+      align-self: center;
+      padding: 0px;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 1.2em;
+      margin-right: 5px;
+      height: 30px;
+      width: 40px;
+    }
+
+  }
+
+  .App-header {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .footer {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+}
